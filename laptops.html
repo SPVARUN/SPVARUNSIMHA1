@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+    <script type="text/javascript">
+
+        var laptopNumber = 10;
+        var laptopName = "Lenovo A1";
+
+        function displayLaptopDetails() {
+            var laptopPrice = 980000;
+            var laptopModel = "3-Generation";
+            var laptopBrandName = "Lenovo";
+            var laptopROMsize = "1TB-ROM";
+            var laptopRAMsize = "12GB-RAM";
+            var laptopScreensize = "16-Inches";
+            var laptopWarenty = "1-Year";
+            document.writeln("Laptop Deatils are " + "<br>" + "======================================" + "<br><br>");
+            document.writeln("laptopNumber  :  " + laptopNumber + "<br>" + "laptopName : " + laptopName + "<br>" + "laptopPrice  :  " + laptopPrice + "<br>" + "laptopModel  :  " + laptopModel + "<br>" + "laptopRAMsize  :  " + laptopRAMsize + "<br>" + "laptopROMsize  :  " + laptopROMsize + "<br>" + "laptopScreensize  :  " + laptopScreensize + "<br>" + "laptopWarenty  :  " + laptopWarenty);
+            document.writeln("<br><br><br>");
+        }
+        function LaptopOfferDetails() {
+            document.writeln("Get LapTop Offer Deatils" + "<br>" + "====================================" + "<br><br><br>");
+            var Orizinal_laptopPrice = 90000;
+            var Laptop_discount = 2000;
+            var AfterDisCount = 70000;
+            document.writeln("Laptop Orizinal Price  :  " + Orizinal_laptopPrice + "<br>" + "Laptop_discount : " + Laptop_discount + "<br>" + "AfterDisCount  :  " + AfterDisCount);
+            document.writeln("<br><br><br>");
+        }
+        function checkLaptopAvailability(entercity) {
+            if (entercity == "bangalore") {
+                document.writeln("Laptop is available");
+                document.writeln("<br><br><br>");
+            }
+            else {
+                document.writeln("Sorry....Laptop is not available");
+                document.writeln("<br><br><br>");
+            }
+        }
+        function TrackLaptop() {
+            document.writeln("Laptop is near to your place, so it will arrive soon");
+            document.writeln("<br><br><br>");
+        }
+        function Buy() {
+            enterMoney();
+        }
+        function enterMoney() {
+            document.writeln("You have successfully bought Lenovo Laptop" + "<br><br><br>");
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>THIS IS MY SECOND HTML,CSS and JAVA SCRIPT PRACTICE</h1>
+    </center>
+    <br>
+    <hr><br>
+    <input type="button" value="GetLaptopDetails" onclick="displayLaptopDetails()" />
+    <br><br>
+    <hr><br>
+    <input type="button" value="GetLaptopOfferDetails" onclick="LaptopOfferDetails()" />
+    <br><br>
+    <hr><br>
+    <input type="button" value="CheckLaptopAvailability" onclick="checkLaptopAvailability('hyderabad')" />
+    <br><br>
+    <hr><br>
+    <input type="button" value="TrackLaptop" onclick="TrackLaptop()" />
+    <br><br>
+    <hr><br>
+    <input type="button" value="Buy" onclick="Buy()" />
+    <br><br>
+    <hr><br>
+
+
+</body>
+
+</html>
