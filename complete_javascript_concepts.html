@@ -1,0 +1,1195 @@
+<html>
+    <head>
+       <script type="text/javascript">
+        
+        document.writeln("Variables creation start...!<br><br>");
+
+        var account = 202020;  // Global Variables
+        var branch = 'sbi_pulivendla';  // Global Variables
+        var ifsc_code = 'sbin00211';  // Global Variables
+
+        document.writeln(account + " -- " + branch + " -- " + ifsc_code + "<br><br>");
+
+        document.writeln("-----------------------------------------<br><br>");
+
+
+
+//----------------------------------------------------------------------------//
+        
+        
+        
+        document.writeln("Functions creation start...!<br><br>"); 
+   
+        function account_details()    // Non_Parameterized function
+        {
+          document.writeln("Non_Parameterized Function Execued <br><br>");
+
+          document.writeln(account +" -- "+ branch + " -- " + ifsc_code +"<br><br>");
+          
+          document.writeln("--------------------------------------------<br><br>");
+        }
+        
+        account_details(); //Calling Function
+
+
+//----------------------------------------------------------------------------//
+
+
+        var name = "SP VARUN SIMHA"; // Variable defined
+        var amount; // Variable declared
+        var transfer_account ; // Variable declared
+
+        var current_balance = 100000000;
+
+//----------------------------------------------------------------------------//
+
+
+        function check_Balance(name1) // Parameterized Function
+        {
+            document.writeln("Parameterized Function Execued <br><br>");
+
+            if(name == name1) // Checking your entered name
+            {
+              document.writeln("Your Current Balance is :  "+ current_balance +"<br><br>");   
+            }
+            else
+            {
+              document.writeln("Enter your correct name  <br><br>");
+            }
+            
+            document.writeln("--------------------------------------------<br><br>");
+            
+        }
+       
+       //check_Balance('Siva'); // Function Calling or Invokation
+
+       check_Balance('SP VARUN SIMHA'); // Function Calling or Invokation
+
+
+//----------------------------------------------------------------------------//
+        
+       
+
+        document.writeln("Array creation start...!<br><br>");
+       
+        var a1 = [10,20,30,40,50,60]; // Created Number type Array with Literals
+
+        // Accessing Elements from Array
+
+        for (let i = 01; i< a1.length; i++)
+        {
+            document.writeln(a1[i] + "<br>");
+        }
+        document.writeln("---------------------------------------------<br><br>");
+
+
+        var a2 = new Array(); // Array Created with new operator and Array() default constructor
+        
+            a2[0] = 1000;
+            a2[1] = 2000;
+            a2[2] = 3000;
+            a2[3] = 4000;
+         
+        for (let i = 01; i < a2.length; i++) 
+        {
+            document.writeln(a2[i] + "<br>");
+        }
+
+        document.writeln("---------------------------------------------<br><br>");
+
+        var a3 = new Array('sp1', 'sp2', 'sp3', 'sp4'); // Array Created with new operator and Array('sp1','sp2','sp3','sp4') parameterized constructor
+
+        for (let i = 01; i < a3.length; i++) 
+        {
+            document.writeln(a3[i] + "<br>");
+        }
+        document.writeln("-----------------------------------------------<br><br>");
+
+
+
+
+//----------------------------------------------------------------------------//
+
+
+
+       document.writeln("String creation start...!<br><br>");
+
+       var s1 = "This is my string creation with direct literals";
+
+       document.writeln(s1 +"<br><br>");
+
+
+       
+        var s2 = new String();
+            s2 = "This is also string but created using new operator with String default constructor";
+        document.writeln(s2 + "<br><br>");
+
+
+        var s3 = new String("This is also string but created using new operator with String  constructor");
+         
+        document.writeln(s3 + "<br><br>");
+
+        document.writeln("-----------------------------------------------<br><br>");
+
+//------------------------------------------------------------------------------------------------------------//
+
+        
+       document.writeln("Object creation start...!<br><br>");
+       
+       var obj1 = {
+                     id   :   01,
+                     name :   'sp',
+                     salary : 999990,
+                     village : 'atp'
+                  }
+        
+       //Accessing values from Object
+
+       document.writeln(obj1.id +" --- "+ obj1.name + " --- " + obj1.salary + " --- " + obj1.village);
+
+       document.writeln("<br><br>------------------------------------<br><br>");
+
+
+       var obj2 = new Object();
+
+           obj2.cell_name = 'vivo';
+           obj2.cell_price = 310000;
+           obj2.cell_model = 'vivo11_pro';
+
+           document.writeln(obj2.cell_name + " --- " + obj2.cell_price + " --- " + obj2.current_balance + " --- " + obj2.cell_model);
+
+           document.writeln("<br><br>------------------------------------<br><br>");  
+
+           document.writeln("/==============================================================/<br>");
+     
+
+           document.writeln("<b><u>Arthimetic Operators</b></u>" + "<br><br>");
+         
+            var a = 10;
+            var b = 05;
+
+            var c1 = a + b;
+            var c2 = a - b;
+            var c3 = a * b;
+            var c4 = a / b;
+            var c5 = a % b;
+            var c6 = ++a;
+            var c7 = --b;
+
+            document.writeln(c1 + "<br><br>");
+            document.writeln(c2 + "<br><br>");
+            document.writeln(c3 + "<br><br>");
+            document.writeln(c4 + "<br><br>");
+            document.writeln(c5 + "<br><br>");
+            document.writeln(c6 + "<br><br>");
+            document.writeln(c7 + "<br><br>");
+
+
+            var a = 5, b = "Hello ", c = "World!", d = 10;
+
+            document.writeln(a + b); // "5Hello "
+
+            document.writeln(b + c); // "Hello World!"
+
+            document.writeln(b + c + d + a); // "Hello World!105"
+
+            document.writeln(a + d); // 15
+
+            document.writeln("<br>/==============================================================/<br>");
+
+            document.writeln("<br><br><br><br>");
+            document.writeln("<b><u>Comparision Operators</b></u>" + "<br><br>");
+
+            var a = 5, b = 10, c = "5";
+            var x = a;
+
+            document.writeln(a == c); // returns true
+            document.writeln(a === c); // returns false
+            document.writeln(a == x); // returns true 
+            document.writeln(a != b); // returns true
+            document.writeln(a > b); // returns false
+            document.writeln(a < b); // returns true
+            document.writeln(a <= b); // returns true
+            document.writeln(a >= c); // returns true
+            document.writeln(a <= c); //returns true
+
+            document.writeln("<br>/==============================================================/<br>");
+
+            document.writeln("<br><br><br><br>");
+            document.writeln("<b><u>Logical Operators</b></u>" + "<br><br>");
+
+            var a = 5, b = 10;
+
+            document.writeln((a != b) && (a < b)); // returns true
+            document.writeln((a > b) || (a == b)); // returns false
+            document.writeln((a < b) || (a == b)); // returns true
+            document.writeln(!(a < b)); // returns false
+            document.writeln(!(a > b)); // returns true
+
+
+            document.writeln("<br>/==============================================================/<br>");
+
+            document.writeln("<br><br><br><br>");
+            document.writeln("<b><u>Assignment Operators</b></u>" + "<br><br>");
+
+            var x = 5;
+
+            document.writeln(x = 5); //x would be 5
+            document.writeln("<br>");
+            document.writeln(x += 1); //x would be 6
+            document.writeln("<br>");
+            document.writeln(x -= 1); //x would be 4
+            document.writeln("<br>");
+            document.writeln(x *= 5); //x would be 25
+            document.writeln("<br>");
+            document.writeln(x /= 5); //x would be 5
+            document.writeln("<br>");
+            document.writeln(x %= 2); //x would be 1
+
+            document.writeln("<br>/==============================================================/<br>");
+
+            document.writeln("<br><br><br><br>");
+            document.writeln("<b><u>Operators</b></u>" + "<br><br>");
+
+            if (1 > 0) 
+            {
+                document.writeln("1 is greater than 0 <br>");
+            }
+
+
+//------------------------------------------------------------------------------------------------------//
+            
+            
+            if (1 < 0) 
+            {
+                document.writeln("1 is greater than 0 <br>");
+            }
+            else 
+            {
+                document.writeln("1 is less than 0 <br>");
+            }
+
+            //------------------------------------------------------------------------------------------------------//
+            
+            
+            var mySal = 500;
+            var yourSal = 1000;
+
+            if (mySal >= yourSal) 
+            {
+                document.writeln("My Salary is greater than your salary <br>");
+            }
+            else if (mySal < yourSal) 
+            {
+                document.writeln("My Salary is less than your salary <br>");
+            }
+            else if (mySal == yourSal) {
+                document.writeln("My Salary is equal to your salary <br>");
+            }
+            else 
+            {
+                document.writeln("Nothing is equals<br>");
+            }
+            //-----------------------------------------------------------------------------------------------------------//
+            var a = 3;
+            switch (a) 
+            {
+                case 1: document.writeln('case 1 executed <br>');
+                break;
+
+                case 2: document.writeln("case 2 executed <br>");
+                break;
+
+                case 3: document.writeln("case 3 executed <br>");
+                break;
+
+                case 4: document.writeln("case 4 executed <br>");
+                break;
+
+                default: document.writeln("default case executed <br>");
+            }
+
+//------------------------------------------------------------------------------------------------------------//
+
+            switch (new Date().getDay())
+            {
+                case 0: day = "Sunday";
+                break;
+
+                case 1: day = "Monday";
+                break;
+
+                case 2: day = "Tuesday";
+                break;
+
+                case 3: day = "Wednesday";
+                break;
+
+                case 4: day = "Thursday";
+                break;
+
+                case 5: day = "Friday";
+                break;
+
+                case 6: day = "Saturday";
+            }
+            document.writeln("Day  is :" + day + "<br>");
+            
+//---------------------------------------------------------------------------------------------------------//
+
+            var expr = 'Papayas';
+            switch (expr) 
+            {
+                case 'Oranges': document.writeln('Oranges are 120 rupees. <br>');
+                break;
+
+                case 'Mangoes':
+                case 'Papayas': document.writeln('Mangoes and papayas are 90  rupees. <br>');
+                break;
+
+                default: document.writeln('Sorry, we are out of ' + expr + '. <br>');
+            }
+
+            document.writeln("<br>/==============================================================/<br>");
+
+//--------------------------------------------------------------------------------------------------//
+
+
+
+            document.writeln("<b><u>Loops starts here </b></u><br><br>");
+            
+            document.writeln("For Loop Start <br>");
+            for (var i = 0; i < 5; i++) 
+            {
+                document.writeln(i + "<br>");
+            }
+
+            document.writeln("-------------<br>");
+
+            var arr = [10, 11, 12, 13, 14];
+
+            for (var i = 0; i < 5; i++) 
+            {
+                document.writeln(arr[i] + "<br>");
+            }
+
+            document.writeln("-------------<br>");
+
+
+//--------------------------------------------------------------------------------------------------//
+
+
+            document.writeln("While Loop Start <br>");
+            
+            var i = 0;
+
+            while (i < 5) 
+            {
+                document.writeln(i + "<br>");
+                i++;
+            }
+
+            document.writeln("-------------<br>");
+            document.writeln("Do while Loop Start <br>");
+
+
+//--------------------------------------------------------------------------------------------------//
+
+
+            var i = 0;
+            do 
+            {
+                document.writeln(i + "<br>");
+                i++;
+            }
+            while (i < 5);
+
+            document.writeln("-------------<br>");
+
+//--------------------------------------------------------------------------------------------------//
+            
+            document.writeln("For-in Loop Start <br>---------------<br>");
+            // creating an Object 
+            var languages = {
+                                first: "React JS",
+                                second: "Redux",
+                                third: "Angular",
+                                fourth: "Blockchain",
+                                fifth: "JavaScript"
+                           };
+
+            // iterate through every property of the 
+            // object languages and print all of them 
+            // using for..in loops 
+
+            for (itr in languages) 
+            {
+                document.write(languages[itr] + "<br >");
+            } 
+
+
+//--------------------------------------------------------------------------------------------------//
+
+    var account_number;
+    var name;
+    var branch_name;
+    var current_balane = 200000000000;
+    var ifsc_code;
+
+
+    document.writeln("<br><br>");
+    document.writeln("Functions Will Start Here " + "<br>" + "=============================================");
+    document.writeln("<br><br>");
+
+    function getcube(number) 
+    {
+        document.writeln(number * number * number);
+    }
+    document.writeln("<br><br>");
+
+    function ReturnNumber(number) 
+    {
+        return number;
+    }
+    document.writeln("<br><br>");
+
+
+    function getInfo() 
+    {
+        return "hello javatpoint! How r u?";
+    }
+
+    document.writeln("<br><br>");
+    
+    function deposit(enter_amount, To_Account_Number) 
+    {
+        document.writeln("your current balance is : " + current_balane);
+        current_balane = current_balane + enter_amount;
+        document.writeln("<br><br><br><br>");
+        document.writeln("you have deposited " + enter_amount + "/- rupees");
+        document.writeln("<br><br><br><br>");
+        document.writeln("your current balance after depost money : " + current_balane);
+
+        var a1 = 10;
+
+        var a2 = 10;
+
+        var a3 = a1 + a2;
+
+        var a4 = a1 - a2;
+
+        var a5 = a1 * a2;
+
+        var a6 = a1 / a2;
+
+        var a7 = a1 % a2;
+
+        document.writeln("<br><br><br><br>");
+        document.writeln("Arithemetic Operations" + "<br>");
+        document.writeln("=========================================");
+        document.writeln("<br><br><br><br>");
+        document.writeln(a1);
+        document.writeln("<br><br><br><br>");
+        document.writeln(a2);
+        document.writeln("<br><br><br><br>");
+        document.writeln(a3);
+        document.writeln("<br><br><br><br>");
+        document.writeln(a4);
+        document.writeln("<br><br><br><br>");
+        document.writeln(a5);
+        document.writeln("<br><br><br><br>");
+        document.writeln(a6);
+
+        document.writeln("<br><br><br><br>");
+        document.writeln(a7);
+        document.writeln("<br><br><br><br>");
+
+        var a8 = 100;
+
+        document.writeln("<br><br><br><br>");
+        document.writeln(a8++);
+
+        document.writeln("<br><br><br><br>");
+        document.writeln(a8--);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln("Comparision Operators");
+        document.writeln("<br>");
+        document.writeln("===============================================");
+        document.writeln("<br>");
+        document.writeln("");
+
+        document.writeln(a1 > a4);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(a1 >= a4);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(a1 < a4);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(a1 <= a4);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(a1 == a4);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(a1 != a4);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(a1 && a4);
+        document.writeln("<br>");
+        document.writeln("BitWise Operators");
+        document.writeln("<br>");
+        document.writeln("===============================================");
+        document.writeln("<br>");
+        document.writeln("");
+
+        document.writeln(10 == 20 & 20 == 33);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(10 == 20 | 20 == 33);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(10 == 20 ^ 20 == 33);
+        document.writeln("<br><br><br><br>");
+
+
+        document.writeln(~10);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(10 << 2);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(10 >> 2);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(10 >>> 2);
+        document.writeln("<br><br><br><br>");
+
+        document.writeln("LOGICAL OPERATORS" + "<br>");
+        document.writeln("===============================================");
+        document.writeln("<br>");
+
+        document.writeln((10 == 20 && 20 == 33));
+        document.writeln("<br><br><br><br>");
+
+        document.writeln((10 == 20 || 20 == 33));
+        document.writeln("<br><br><br><br>");
+
+        document.writeln(!(10 == 20));
+        document.writeln("<br><br><br><br>");
+
+        document.writeln("Control Statements" + "<br>");
+        document.writeln("===============================================");
+        document.writeln("<br>");
+        var a = 20;
+        if (a > 100) 
+        {
+            document.write("value of a is greater than 10");
+        }
+        else 
+        {
+            document.writeln("value of a is not greater than 100")
+        }
+        document.writeln("<br><br><br><br>");
+        if (a == 100) 
+        {
+            document.write("value of a is equals to 100");
+        }
+        else if (a == 1000) 
+        {
+            document.write("value of a is equals to 1000");
+        }
+        else if (a == 1000) 
+        {
+            document.write("value of a is equals to 1000");
+        }
+        else if (a == 10) 
+        {
+            document.write("value of a is equals to 10");
+        }
+        else if (a == 1) 
+        {
+            document.write("value of a is equals to 1");
+        }
+        else if (a == 11000) 
+        {
+            document.write("value of a is equals to 11000");
+        }
+        else 
+        {
+            document.write("value of a is equals to 20");
+        }
+        
+        document.writeln("<br><br>==========================================================<br><br>");
+        
+        var grade = "Failed";
+        var result;
+        switch (grade) 
+        {
+            case "A": result = "A-grade";
+            break;
+
+            case "B": result = "B-grade";
+            break;
+
+            case "C": result = "C-grade";
+            break;
+
+            case "D": result = "D-grade";
+            break;
+
+            default: result = "Sorry you have failed";
+            break;
+        }
+        document.writeln("Your result is : " + result);
+        document.writeln("<br><br>");
+        document.writeln("LOOPS" + "<br>" + "=============================================");
+        document.writeln("<br><br>");
+        document.writeln("<br><br>");
+        document.writeln("FOR LOOPS" + "<br>" + "=============================================");
+        document.writeln("<br><br>");
+
+        var i = 0;
+        for (i; i <= 5; i++) 
+        {
+            document.writeln(i + "<br>" + "<br>");
+        }
+        document.writeln("<br><br>");
+        document.writeln("WHILE LOOPS" + "<br>" + "=============================================");
+        document.writeln("<br><br>");
+        
+        var i = 0;
+        while (i <= 10) 
+        {
+            document.writeln(i + "<br>" + "<br>");
+            i++;
+        }
+        document.writeln("<br><br>");
+        
+        document.writeln("DO WHILE LOOPS" + "<br>" + "=============================================");
+        document.writeln("<br><br>");
+        var i = 0;
+        do 
+        {
+            document.writeln(i + "<br>" + "<br>");
+            i++;
+        }
+        while (i <= 7)
+        
+        document.writeln("<br><br>");
+        document.writeln("Objects " + "<br>" + "=============================================");
+        document.writeln("<br><br>");
+        
+        var emp = {
+                    id: 21,
+                    name: "SP VARUN SIMHA",
+                    age: 31,
+                    phone: 7411789300
+                 }
+
+        document.writeln(emp.id + " ---  " + emp.name + " --- " + emp.age + " --- " + emp.phone);
+
+        document.writeln("<br>-----------------------<br>");
+        
+        var emp1 = new Object();
+
+        emp1.id = 10;
+        emp1.name = "SP VARUN";
+        emp1.age = 30;
+        emp1.salary = 900000;
+        document.writeln(emp1.id + " ---  " + emp1.name + " --- " + emp1.age + " --- " + emp1.salary);
+
+
+        document.writeln("<br>---------------------------------<br>");
+        
+        function Employee(id, name, age, salary) 
+        {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+            this.salary = salary;
+        }
+        
+        
+        var emp2 = new Employee(02, "SPPATHI", 30, 1111111);
+
+        document.writeln(emp2.id + " ---  " + emp2.name + " --- " + emp2.age + " --- " + emp2.salary);
+        document.writeln("<br><br>");
+
+        document.writeln("<br>-----------------------------------------<br>");
+        document.writeln("ARRAYS " + "<br>" + "=============================================");
+        document.writeln("<br><br>");
+
+        var emp3 = ["SP1", "SP2", "SP3", "SP4", "SP5"];
+        for (i = 0; i < emp3.length; i++) 
+        {
+            document.writeln(emp3[i] + "<br>");
+        }
+        document.writeln("<br>");
+        document.writeln("Array by creating Array default Constructor");
+        document.writeln("<br>");
+
+//======================================================================================================//
+
+        var emp4 = new Array();
+        emp4[0] = 100;
+        emp4[1] = 200;
+        emp4[2] = 300;
+        emp4[3] = 400;
+        emp4[4] = 500;
+        emp4[5] = 600;
+
+        for (i = 0; i < emp4.length; i++) 
+        {
+            document.writeln(emp4[i] + "<br>");
+        }
+        document.writeln("<br><br>");
+        document.writeln("<br>");
+        document.writeln("Array by creating Array Parameterized Constructor");
+        document.writeln("<br>");
+
+//======================================================================================================//
+
+        var emp5 = new Array("VARUN", "THARUN", "RAMAN", "RAGAVAN");
+        for (i = 0; i < emp5.length; i++) 
+        {
+            document.writeln(emp5[i] + "<br>");
+        }
+        document.writeln("<br><br>");
+        document.writeln("<br>");
+
+//======================================================================================================//
+
+        document.writeln("=============String COncepts===========================");
+        document.writeln("<br>");
+
+        var StringName1 = "This is my javascript practice class  created by using string literal object";
+        var StringName2 = new String();
+        StringName2 = "This is String Object created using Default Constructor";
+        var StringName3 = new String("This is String created with the help of String Parameterized Constructor");
+
+        document.write(StringName1);
+        document.writeln("<br><br>");
+
+        document.write(StringName2);
+        document.writeln("<br><br>");
+        document.write(StringName3);
+        document.writeln("<br><br>");
+        document.write(StringName1.charAt(2));
+        document.writeln("<br><br>");
+        document.write(StringName1.lastIndexOf(9));
+        document.writeln("<br><br>");
+
+        var StringName4 = StringName1.concat(StringName2);
+        document.write(StringName4.toLocaleUpperCase() + "<br><br>");
+
+        document.write(StringName1.toLocaleLowerCase());
+        document.writeln("<br><br>");
+
+
+        document.writeln("=============DATE Concepts===========================");
+        document.writeln("<br>");
+
+
+//======================================================================================================//
+
+
+        var date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        document.write("<br>Date is: " + day + "/" + month + "/" + year);
+        document.writeln("<br><br>");
+        
+        var today = new Date();
+        
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        
+        document.writeln(h + ":" + m + ":" + s);
+        
+        document.writeln("<br><br>");
+        document.writeln("=============MATH Concepts===========================");
+        document.writeln("<br>");
+
+//======================================================================================================//
+        
+        document.writeln(Math.sqrt(17));
+        
+        document.writeln("<br><br>" + Math.pow(3, 4));
+        document.writeln("<br><br>" + Math.floor(4.6));
+        document.writeln("<br><br>" + Math.ceil(4.6));
+        document.writeln("<br><br>" + Math.round(4.7));
+        document.writeln("<br><br>" + Math.abs(-4));
+        document.writeln("<br><br>");
+        
+        document.writeln("=============MATH Concepts===========================");
+        document.writeln("<br>");
+
+    }
+
+//=====================================================================================================//
+
+
+      document.writeln("<br>======Browser Object Model Start========<br>");
+
+      function checkingbom() 
+      {
+            alert("Alert Box function called  ");
+
+            document.writeln("<br>-----------------<br>");
+
+            var v = confirm("Are u sure you want to cancle ticket ?");
+
+            if (v == true) 
+            {
+                alert("you have successfully cancled ticket");
+            }
+            else 
+            {
+                alert("your ticket is safe");
+            }  
+            
+            document.writeln("<br>-----------------<br>");
+
+            var v = prompt("Whish your friend Birthday : ");
+
+               alert("Hello Mr. " + v);
+
+            document.writeln("<br>-------------<br>");
+
+
+            open("http://www.spvaruna.com"); 
+            
+
+            setTimeout( function ()
+                        {
+                           alert("Welcome to SP Varun_Simha_IT_Solutions after 5 seconds")
+                        },
+                        
+                        5000);  
+      }  
+
+//======================================================================================================//
+
+      function histroyFunction()
+      {
+        //   history.back();//for previous page  
+        //   history.forward();//for next page  
+        //   history.go(2);//for next 2nd page  
+        //   history.go(-2);//for previous 2nd page  
+
+          document.writeln(history.back());
+          document.writeln(history.forward());
+          document.writeln(history.go(2));
+          document.writeln(history.go(-2));
+      }
+
+//======================================================================================================//
+
+      function naviagtorFunction() 
+      {
+          document.writeln("<br/>navigator.appCodeName: " + navigator.appCodeName);
+          document.writeln("<br/>navigator.appName: " + navigator.appName);
+          document.writeln("<br/>navigator.appVersion: " + navigator.appVersion);
+          document.writeln("<br/>navigator.cookieEnabled: " + navigator.cookieEnabled);
+          document.writeln("<br/>navigator.language: " + navigator.language);
+          document.writeln("<br/>navigator.userAgent: " + navigator.userAgent);
+          document.writeln("<br/>navigator.platform: " + navigator.platform);
+          document.writeln("<br/>navigator.onLine: " + navigator.onLine);      
+      }
+
+
+//======================================================================================================//
+
+
+
+      function screenFunction() 
+      {
+          document.writeln("<br/>screen.width: " + screen.width);
+          document.writeln("<br/>screen.height: " + screen.height);
+          document.writeln("<br/>screen.availWidth: " + screen.availWidth);
+          document.writeln("<br/>screen.availHeight: " + screen.availHeight);
+          document.writeln("<br/>screen.colorDepth: " + screen.colorDepth);
+          document.writeln("<br/>screen.pixelDepth: " + screen.pixelDepth);  
+      }
+
+//=====================================================================================================//
+
+
+      function getingValue() 
+      {
+         var name2 = document.form1.name.value; // Getting input field value using old process
+         alert("Welcome: " + name2);
+      }  
+
+
+//======================================================================================================//
+
+     function getcube() 
+     {
+        var number = document.getElementById("number").value; // Getting input field value using id 
+        alert(number * number * number);
+     }  
+
+//========================================================================================================//
+
+    function totalelements() 
+    {
+        var allgenders = document.getElementsByName("gender"); // Getting input field value using name
+        alert("Total Genders:" + allgenders.length);
+    }  
+
+//=======================================================================================================//
+
+    function countpara() 
+    {
+        var totalpara = document.getElementsByTagName("p");
+        alert("total p tags are: " + totalpara.length);
+    }  
+
+//=======================================================================================================//
+   
+    function counth2() 
+    {
+            var totalh2 = document.getElementsByTagName("h2");
+            alert("total h2 tags are: " + totalh2.length);
+    }
+    function counth3() 
+    {
+            var totalh3 = document.getElementsByTagName("h3");
+            alert("total h3 tags are: " + totalh3.length);
+    }  
+
+
+//=======================================================================================================//
+   function validateform() 
+   {
+        var name = document.myform.name.value;
+        var password = document.myform.password.value;
+
+        if (name == null || name == "") 
+        {
+            alert("Name can't be blank");
+            return false;
+        } 
+        else if (password.length < 6) 
+        {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+    }      
+    
+
+    
+
+
+
+//=======================================================================================================//
+
+
+    function matchpass() 
+    {
+        var firstpassword = document.f1.password.value;
+        var secondpassword = document.f1.password2.value;
+
+        if (firstpassword == secondpassword) {
+            return true;
+        }
+        else 
+        {
+            alert("password must be same!");
+            return false;
+        }
+    }  
+
+
+
+//=======================================================================================================//
+
+    function validate1() 
+    {
+        var num = document.myform1.num.value;
+        if (isNaN(num)) 
+        {
+            document.getElementById("numloc").innerHTML = "Enter Numeric value only";
+            return false;
+        } 
+        else 
+        {
+            return true;
+        }
+    }
+
+
+
+//=======================================================================================================//
+
+
+    function validate2() 
+    {
+            var name = document.f1.name.value;
+            var password = document.f1.password.value;
+            var status = false;
+
+            if (name.length < 1) 
+            {
+                document.getElementById("nameloc").innerHTML =
+                    " <img src='unchecked.gif'/> Please enter your name";
+                status = false;
+            } 
+            else 
+            {
+                document.getElementById("nameloc").innerHTML = " <img src='checked.gif'/>";
+                status = true;
+            }
+            
+            
+            if (password.length < 6) 
+            {
+                document.getElementById("passwordloc").innerHTML =
+                    " <img src='unchecked.gif'/> Password must be at least 6 char long";
+                status = false;
+            } 
+            else 
+            {
+                document.getElementById("passwordloc").innerHTML = " <img src='checked.gif'/>";
+            }
+            return status;
+        }  
+
+
+
+//=======================================================================================================//
+
+    function validateemail()
+     {
+        var x = document.myform3.email.value;
+        var atposition = x.indexOf("@");
+        var dotposition = x.lastIndexOf(".");
+
+        if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) 
+        {
+            alert("Please enter a valid e-mail address \n atpostion:" + atposition + "\n dotposition:" + dotposition);
+            return false;
+        }
+    }  
+
+</script>
+    </head>
+    <body>
+
+        <br><br><br><br><br><br>
+
+        <div id="validations">
+
+            <form>
+                <input type="button" value="Deposit" onclick="deposit(1111,454545)" />
+                <br><br>
+                <input type="button" value="GetCube" onclick="getcube(4)" />
+                <br><br>
+                <input type="button" value="Checkingbom" onclick="checkingbom()" /> 
+                <br><br>
+                <input type="button" value="HistroyFunction" onclick="histroyFunction()" />
+                <br><br>
+                <input type="button" value="NaviagtorFunction" onclick="naviagtorFunction()" />
+                <br><br>
+                <input type="button" value="ScreenFunction" onclick="screenFunction()" />
+
+
+
+                <br><hr><br>
+                <input type="button" value="ScreenFunction" onclick="getingValue()" />
+            </form>
+            <br><br>
+
+            <form name="form1" action="#">
+                
+                Enter Your Name : <input type="text" name="name" />
+                <input type="button" value="GetingValue" onclick="getingValue()" />
+                <br><hr><br>
+
+                Enter No:<input type="text" id="number" name="number" /><br />
+                <input type="button" value="cube" onclick="getcube()" />
+                <br><hr><br>
+
+                Male:<input type="radio" name="gender" value="male">
+                Female:<input type="radio" name="gender" value="female">
+                
+                <input type="button" onclick="totalelements()" value="Total Genders">
+                <br><hr><br>
+
+            </form>
+        </div>
+        
+        <br><br><hr><br><br>
+        <p>This is a pragraph</p>
+        <p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>
+        <p>Let's see the simple example</p>
+        <button onclick="countpara()">count paragraph</button>
+
+
+        <br><br><hr><br><br>
+        <h2>This is h2 tag</h2>
+        <h2>This is h2 tag</h2>
+        <h3>This is h3 tag</h3>
+        <h3>This is h3 tag</h3>
+        <h3>This is h3 tag</h3>
+        <button onclick="counth2()">count h2</button>
+        <button onclick="counth3()">count h3</button>
+
+
+        <br><br><hr><br><br>
+        <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
+            Name: <input type="text" name="name"><br />
+            Password: <input type="password" name="password"><br />
+            <input type="submit" value="register">
+        </form>
+
+
+        <br><br><hr><br><br>
+        <form name="f1" action="#" onsubmit="return matchpass()">
+            Password:<input type="password" name="password" /><br />
+            Re-enter Password:<input type="password" name="password2" /><br />
+            <input type="submit">
+        </form>
+
+
+        <br><br><hr><br><br>
+        <form name="myform1" onsubmit="return validate1()" action="#">
+            Number: <input type="text" name="num"><span id="numloc"></span><br />
+            <input type="submit" value="submit">
+        </form>
+
+
+        <br><br><hr><br><br>
+        <form name="f1" action="#" onsubmit="return validate2()">
+            <table>
+                <tr>
+                    <td>Enter Name:</td>
+                    <td><input type="text" name="name" />
+                        <span id="nameloc"></span></td>
+                </tr>
+                <tr>
+                    <td>Enter Password:</td>
+                    <td><input type="password" name="password" />
+                        <span id="passwordloc"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="register" /></td>
+                </tr>
+            </table>
+        </form>
+
+
+        <form name="myform3" method="post" action="#" onsubmit="return validateemail();">
+            Email: <input type="text" name="email"><br />
+                   <input type="submit" value="register">
+        </form>
+    </body>
+</html>
